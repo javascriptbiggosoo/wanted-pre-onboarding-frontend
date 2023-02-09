@@ -12,7 +12,7 @@ export default function Router() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
           path="/"
